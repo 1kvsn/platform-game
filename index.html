@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="app.css">
+		<title>platform game</title>
+	</head>
+	<body>
+
+		<script src="index.js">
+			let simpleLevel = new Level(simpleLevelPlan);
+			let display = new DOMDisplay(document.body, simpleLevel);
+			display.syncState(State.start(simpleLevel));
+		</script>
+		<script src="levels.js"></script>
+	</body>
+</html>
