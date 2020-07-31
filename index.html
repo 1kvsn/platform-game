@@ -7,11 +7,10 @@
 		<title>platform game</title>
 	</head>
 	<body>
-
-		<script src="index.js">
-			let simpleLevel = new Level(simpleLevelPlan);
-			let display = new DOMDisplay(document.body, simpleLevel);
-			display.syncState(State.start(simpleLevel));
+		<script src="index.js"></script>
+		<script src="levels.js"></script>
+		<script>
+			runGame(GAME_LEVELS, DOMDisplay);
 		</script>
 		<script src="levels.js"></script>
 	</body>
